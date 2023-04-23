@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Tutorial 3 </title>
+</head>
+
+<body>
+    <h2>Tables and Lists</h2>
+    <h3>LISTS</h3>
+    <ul>
+        <li>First element of unordered list</li>
+        <li>Second element of unordered list</li>
+        <li>Third element of unordered list</li>
+    </ul>
+
+    <ol>
+        <li>First element of ordered list</li>
+        <li>Second element of ordered list</li>
+        <li>Third element of ordered list</li>
+    </ol>
+
+
+    <!-- We can also put type for both ordered and unordered lists (optional) -->
+
+    <ul type="square">
+        <!-- type can be disc, square, cricle -->
+        <li>First element of unordered list</li>
+        <li>Second element of unordered list</li>
+        <li>Third element of unordered list</li>
+    </ul>
+
+    <ol type="I">
+        <!-- type can be 1, A, a, i, I -->
+        <li>First element of ordered list</li>
+        <li>Second element of ordered list</li>
+        <li>Third element of ordered list</li>
+    </ol>
+
+    <!-- We can also use nested lists -->
+    <ol>
+        <li>First element of ordered list has sublist :
+            <ol>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ol>
+        </li>
+        <li>Second element of ordered list</li>
+        <li>Third element of ordered list</li>
+    </ol>
+    
+    <h3>TABLE</h3>
+
+    <table>
+
+
+        <!-- We create a table head and table body using <thead> and <tbody> tags respectively-->
+        <!-- table head content appears in bold-->
+        <!--Also, Out of table head and table body anyone can be omitted (No issue)-->
+        
+        <thead> 
+            <tr>    <!-- We add a row using <tr> </tr> tags-->
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Employee role</tr>
+                <th>Experience</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Siddhant Fatewar</td>
+                <td>1947150</td>
+                <td>ASE</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>Aman Yadav</td>
+                <td>1946282</td>
+                <td>ASE</td>
+                <td>1.2 year</td>
+            </tr>
+            <!--Note : We can ommit any cell as per need. It will appear blank in table -->
+            <tr>
+                <td>Divya Bisht</td>
+                <td>           </td>
+                <td>SE</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+
+</html>

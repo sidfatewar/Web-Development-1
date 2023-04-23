@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tutorial 4</title>
+    </head>
+    <body>
+        <h2>Forms tutorial</h2>
+
+        <!-- We use the <form> tag to use the form feature in html -->
+        <form action="backend.php"> <!-- form will return the data to the backend.php file -->
+            First Name : <input type="text" > 
+            Middle Name : <input type="text" > 
+            <!-- We can also use 'name' attribute to mention the variable name for the value.
+                i.e. the name by which the variable will be known by the backend -->
+            Last Name : <input type="text" name="myLastName" > <br> <br>
+            <!-- We can use <div>  tag to separate lines -->
+            <div>
+                Father's Name : <input type="text" name="myFatherName" >
+            </div> <br>
+            <div> 
+                Mother's Name : <input type="text" name="myMotherName" >
+            </div> <br>
+            <!-- We can use type="email" to enter email id -->
+            <div> 
+                Email : <input type="email" name="myEmail" >
+            </div> <br>
+            <!-- We get date input and also show a calender using type="date"-->
+            <div>
+                Date Of Birth : <input type="date" name="myDate">
+            </div> <br>
+            <!-- We can use type="number" to input numbers --> 
+            <div> 
+                Age (in years) : <input type="number" name="myAge" >
+            </div> <br>
+            <!-- We can add checkboxes also using type="checkbox"-->
+            <div>
+                Married ? : <input type="checkbox" name="maritalStatus" >
+            </div> <br>
+            <!-- To check a checkbox by default, just type 'checked' at the end-->
+            <div>
+                Eligibility : <input type="checkbox" name="eligibility" checked >
+            </div>
+            <!-- We can use radio buttons (when only one option is to be chosen )-->
+            <div>
+                Gender : <br>
+                Male <input type="radio" name="myGender" >  <br>   
+                Female <input type="radio" name="myGender" > <br>
+                Other <input type="radio" name="myGender" > <br>
+                <!-- Here we will be able to choose only one out of the 3 
+                because we have given both the same name (myGender) -->
+            </div> <br>
+            <!-- We can take large text input using <textarea> tag  -->
+            <div>
+                Write about yourself : <br>
+                <textarea name="myText" cols="20" rows="20"></textarea> 
+            </div>
+            
+            <!-- We can use buttons :  -->
+            <!-- We can also add reset button using type="reset" -->
+            <div>
+                <input type="reset" value="Cl ick here to Reset" >
+            </div> <br>
+            <div>
+                <input type="button" value="Click to submit">
+            </div> <br>
+        </form>
+
+
+    </body>
+
+</html>
